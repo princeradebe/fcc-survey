@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grozara Survey</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1 id="title">Grozara Survery</h1>
+        </header>
+        <main>
+            <p class="" id="description">Please fill the survey to let us know what you think about the shopping App</p>
+            <div class="container">
+                <form action="submit" id="survey-form">
+                    <label id="name-label" for="name">
+                        * Name: <input id="name" type="text" placeholder="Enter your Name" required>
+                    </label>
+                    <label id="email-label" for="email">
+                        * Email: <input id="email" type="email" placeholder="Enter your Email" required>
+                    </label>
+                    <label id="number-label" for="age">
+                        * Age: <input id="number" type="number" placeholder="Age" min="12" max="60" required>
+                    </label>
+                    <label for="role"></label>
+                    <label id="role-selection" for="selection">
+                        Which option best describes your current role?
+                        <select name="role" id="dropdown">
+                            <option value="student">Student</option>
+                            <option value="student">Full Time Job</option>
+                            <option value="student">Freelancer</option>
+                        </select>
+                    </label>
+                    <label for="recommend">
+                        * How likely would you recomment Grozara to a friend?
+                        <ul>
+                            <li><label for="definitely" ><input id="definitely" type="radio" value="definitely" name="recommend">Definitely</label></li>
+                            <li><label for="maybe"><input id="maybe" type="radio" value="maybe" name="recommend">Maybe</label></li>
+                            <li><label for="not sure"><input id="not sure" type="radio" value="not sure" name="recommend">Not sure</label></li>
+                        </ul>
+                    </label>
+                    <label for="improvements">
+                        Things that should be improved in the future:
+                        <ul>
+                            <li><label for="ui"><input type="checkbox" value="ui" name="improvements"> UI/UX </label></li>
+                            <li><label for="price"><input type="checkbox" value="price" name="improvements"> Price Accuracy </label></li>
+                        </ul>
+                    </label>
+                    <label for="textarea">
+                        Any Comments or Suggestions?
+                        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
+    </body>
+</html>
