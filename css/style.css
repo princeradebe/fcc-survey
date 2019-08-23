@@ -34,6 +34,7 @@ form {
 input , select, textarea{
     width: 100%;
     margin-bottom: 10px;
+    padding: 0px 0px 0px 5px;
     outline-color: #17B806;
 }
 #email, #name, #number, #dropdown {
